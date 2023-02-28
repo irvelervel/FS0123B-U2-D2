@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: static</title>
+    <style>
+      .static {
+        position: static;
+        /* è il valore di default di position */
+        border: 3px solid red;
+        /* left, right, top & bottom NON HANNO VALORE */
+        top: 30px;
+        /* non funziona :( */
+      }
+    </style>
+  </head>
+  <body>
+    <h2>POSITION: STATIC</h2>
+    <p>
+      Il valore "static" è il default di position. Un elemento con
+      position:static non è posizionato nella pagina in nessun modo speciale,
+      seguirà sempre il normale flow. Si dichiara esplicitamente quando c'è
+      bisogno che un elemento child NON eriditi la position dell'elemento padre
+    </p>
+    <div class="static">Questo div è posizionato con position:static</div>
+  </body>
+</html>

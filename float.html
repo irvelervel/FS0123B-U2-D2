@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float property</title>
+    <style>
+      body {
+        /* margin: 0; */
+      }
+      .container {
+        width: 100%;
+        border: 1px solid black;
+        margin: 0 auto;
+      }
+
+      header {
+        background-color: navy;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      nav {
+        background-color: lightblue;
+      }
+
+      nav ul {
+        margin: 0;
+        list-style-type: none;
+      }
+
+      @media screen and (min-width: 768px) {
+        /* schermi da tablet in su */
+        .container {
+          width: 800px;
+        }
+
+        nav ul li {
+          display: inline;
+          padding: 0 20px;
+        }
+      }
+
+      #left {
+        float: left;
+        /* float rimuove un elemento dal normale flow della pagina, lo sposta
+        all'interno del suo contenitore nella direzione voluta e permette
+        all'elemento successivo nell'HTML di posizionarsi nello spazio ora libero */
+      }
+
+      #right {
+        float: right;
+      }
+
+      #left img,
+      #right img {
+        width: 250px;
+      }
+
+      #left img {
+        margin-right: 10px;
+      }
+
+      #right img {
+        margin-left: 10px;
+      }
+
+      footer {
+        clear: left;
+        /* o clear: both, che funziona sempre :) */
+        /* clear resetta il flow della pagina da questo punto dell'HTML in poi */
+        /* quindi il footer non seguirà più l'andamento della section, ma si 
+        posizionerà in fondo al main */
+        background-color: blueviolet;
+        color: white;
+        text-align: center;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      .mini-img-left,
+      .mini-img-right {
+        width: 80px;
+      }
+
+      .mini-img-left {
+        float: left;
+      }
+
+      .mini-img-right {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>EPICODE</h1>
+        <nav>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>ANGULAR</li>
+            <li>REACT</li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <aside id="left">
+          <img src="https://placekitten.com/600" alt="kitten pic" />
+        </aside>
+        <aside id="right">
+          <img src="https://placekitten.com/600" alt="kitten pic" />
+        </aside>
+        <!-- ricordarsi di inserire gli elementi con applicato float:
+        sempre PRIMA degli elementi liberi -->
+        <section>
+          <p>
+            <img
+              class="mini-img-left"
+              src="https://placekitten.com/600"
+              alt="kitten pic"
+            />
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit,
+            aliquid fuga? Praesentium magnam saepe voluptas natus quis qui,
+            fugiat ipsam debitis accusamus mollitia architecto distinctio ipsa
+            nam deserunt quam et?
+          </p>
+          <p>
+            <img
+              class="mini-img-right"
+              src="https://placekitten.com/600"
+              alt="kitten pic"
+            />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+            dolor laborum corrupti ipsum nulla deleniti maxime nemo, fugiat
+            voluptatum, temporibus minus provident vel earum perferendis eum
+            placeat cum voluptatem sapiente.
+          </p>
+        </section>
+        <footer>
+          <p>EPICODE</p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

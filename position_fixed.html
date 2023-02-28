@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: fixed</title>
+    <style>
+      .fixed {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        background-color: red;
+      }
+
+      button {
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        background-color: blue;
+        color: white;
+      }
+
+      body {
+        margin: 0;
+        margin-bottom: 30px;
+        /* questo evita che, una volta scrollata la pagina fino in fondo,
+        ci sia del testo non visibile a causa del div .fixed sovraimpresso */
+      }
+    </style>
+  </head>
+  <body>
+    <h2>POSITION: FIXED</h2>
+    <p>
+      Un elemento con position: fixed è posizionato relativamente al viewport,
+      all'area di visualizzazione; questo significa che il suo posizionamento
+      non viene condizionato dallo scroll della pagina. Useremo sempre top,
+      bottom, left e right per posizionare l'elemento.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet itaque
+      natus numquam, consequuntur dolore repudiandae labore perferendis
+      doloremque reiciendis, libero ex repellat ipsam, blanditiis atque vel.
+      Adipisci, fuga consequatur. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Vero, molestias. Eum, itaque minus. Repellendus
+      voluptatem aperiam rem, sint ducimus at quae excepturi, odit molestias
+      error iusto ea qui quo! Ex? Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Facilis hic, quos, reprehenderit incidunt ipsam nihil
+      inventore explicabo, pariatur quo veniam a numquam placeat rerum. Dolorem
+      recusandae dolor magni aperiam voluptatibus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet itaque
+      natus numquam, consequuntur dolore repudiandae labore perferendis
+      doloremque reiciendis, libero ex repellat ipsam, blanditiis atque vel.
+      Adipisci, fuga consequatur. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Vero, molestias. Eum, itaque minus. Repellendus
+      voluptatem aperiam rem, sint ducimus at quae excepturi, odit molestias
+      error iusto ea qui quo! Ex? Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Facilis hic, quos, reprehenderit incidunt ipsam nihil
+      inventore explicabo, pariatur quo veniam a numquam placeat rerum. Dolorem
+      recusandae dolor magni aperiam voluptatibus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet itaque
+      natus numquam, consequuntur dolore repudiandae labore perferendis
+      doloremque reiciendis, libero ex repellat ipsam, blanditiis atque vel.
+      Adipisci, fuga consequatur. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Vero, molestias. Eum, itaque minus. Repellendus
+      voluptatem aperiam rem, sint ducimus at quae excepturi, odit molestias
+      error iusto ea qui quo! Ex? Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Facilis hic, quos, reprehenderit incidunt ipsam nihil
+      inventore explicabo, pariatur quo veniam a numquam placeat rerum. Dolorem
+      recusandae dolor magni aperiam voluptatibus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet itaque
+      natus numquam, consequuntur dolore repudiandae labore perferendis
+      doloremque reiciendis, libero ex repellat ipsam, blanditiis atque vel.
+      Adipisci, fuga consequatur. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Vero, molestias. Eum, itaque minus. Repellendus
+      voluptatem aperiam rem, sint ducimus at quae excepturi, odit molestias
+      error iusto ea qui quo! Ex? Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Facilis hic, quos, reprehenderit incidunt ipsam nihil
+      inventore explicabo, pariatur quo veniam a numquam placeat rerum. Dolorem
+      recusandae dolor magni aperiam voluptatibus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet itaque
+      natus numquam, consequuntur dolore repudiandae labore perferendis
+      doloremque reiciendis, libero ex repellat ipsam, blanditiis atque vel.
+      Adipisci, fuga consequatur. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Vero, molestias. Eum, itaque minus. Repellendus
+      voluptatem aperiam rem, sint ducimus at quae excepturi, odit molestias
+      error iusto ea qui quo! Ex? Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Facilis hic, quos, reprehenderit incidunt ipsam nihil
+      inventore explicabo, pariatur quo veniam a numquam placeat rerum. Dolorem
+      recusandae dolor magni aperiam voluptatibus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet itaque
+      natus numquam, consequuntur dolore repudiandae labore perferendis
+      doloremque reiciendis, libero ex repellat ipsam, blanditiis atque vel.
+      Adipisci, fuga consequatur. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Vero, molestias. Eum, itaque minus. Repellendus
+      voluptatem aperiam rem, sint ducimus at quae excepturi, odit molestias
+      error iusto ea qui quo! Ex? Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Facilis hic, quos, reprehenderit incidunt ipsam nihil
+      inventore explicabo, pariatur quo veniam a numquam placeat rerum. Dolorem
+      recusandae dolor magni aperiam voluptatibus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet itaque
+      natus numquam, consequuntur dolore repudiandae labore perferendis
+      doloremque reiciendis, libero ex repellat ipsam, blanditiis atque vel.
+      Adipisci, fuga consequatur. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Vero, molestias. Eum, itaque minus. Repellendus
+      voluptatem aperiam rem, sint ducimus at quae excepturi, odit molestias
+      error iusto ea qui quo! Ex? Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Facilis hic, quos, reprehenderit incidunt ipsam nihil
+      inventore explicabo, pariatur quo veniam a numquam placeat rerum. Dolorem
+      recusandae dolor magni aperiam voluptatibus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet itaque
+      natus numquam, consequuntur dolore repudiandae labore perferendis
+      doloremque reiciendis, libero ex repellat ipsam, blanditiis atque vel.
+      Adipisci, fuga consequatur. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Vero, molestias. Eum, itaque minus. Repellendus
+      voluptatem aperiam rem, sint ducimus at quae excepturi, odit molestias
+      error iusto ea qui quo! Ex? Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Facilis hic, quos, reprehenderit incidunt ipsam nihil
+      inventore explicabo, pariatur quo veniam a numquam placeat rerum. Dolorem
+      recusandae dolor magni aperiam voluptatibus.
+    </p>
+    <div class="fixed">
+      <button>BUTTON 1</button>
+      <button>BUTTON 2</button>
+      <button>BUTTON 3</button>
+      <button>BUTTON 4</button>
+    </div>
+  </body>
+</html>

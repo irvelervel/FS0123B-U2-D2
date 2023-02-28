@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-INDEX</title>
+    <style>
+      .container {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        border: 2px solid black;
+        position: relative;
+        left: 100px;
+      }
+
+      .container div {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+      }
+
+      #red {
+        background-color: red;
+        z-index: 0;
+      }
+
+      #blue {
+        background-color: blue;
+        top: 20px;
+        left: 20px;
+        z-index: -1;
+      }
+
+      #green {
+        background-color: green;
+        top: 40px;
+        left: 40px;
+        z-index: -2;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Z-INDEX</h2>
+    <p>
+      z-index è una proprietà che determina l'ordine di rendering degli elementi
+      da parte del browser.
+    </p>
+    <div class="container">
+      <div id="red"></div>
+      <div id="blue"></div>
+      <div id="green"></div>
+    </div>
+  </body>
+</html>
